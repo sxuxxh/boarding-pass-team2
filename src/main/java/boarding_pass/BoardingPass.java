@@ -1,3 +1,8 @@
+/*
+  FSE Cohort - Team Project1
+  BoardingPass-Team2
+  Class: BoardingPass - core class to hold boarding pass info
+ */
 package boarding_pass;
 
 public final class BoardingPass {
@@ -70,7 +75,7 @@ public final class BoardingPass {
 
     // Method: generateETA()
     public String generateETA(TripCode tripCode, String departureDateTime) {
-        String eta;
+        String eta="";
         // logics to calculate ETA based on departureTime and ETA tripcode mapping
         // ...
         return eta;

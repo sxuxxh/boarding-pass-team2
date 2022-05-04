@@ -1,3 +1,8 @@
+/*
+  FSE Cohort - Team Project1
+  BoardingPass-Team2
+  Class: PassengerInfo - class for passenger input
+ */
 package boarding_pass;
 
 import java.util.Scanner;
