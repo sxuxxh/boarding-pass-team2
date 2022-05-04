@@ -17,7 +17,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "boarding_pass.BoardingPass",
+					"name": "boarding_pass.Main",
 					"defaultDiagram": true
 				}
 			]
@@ -59,7 +59,7 @@
 									"top": 21,
 									"width": 81.93896484375,
 									"height": 13,
-									"text": "boarding_pass.BoardingPass"
+									"text": "boarding_pass.Main"
 								},
 								{
 									"_type": "LabelView",
@@ -1428,7 +1428,7 @@
 											"top": 267.5,
 											"width": 154,
 											"height": 13,
-											"text": "Generate boarding_pass.BoardingPass"
+											"text": "Generate boarding_pass.Main"
 										},
 										{
 											"_type": "LabelView",
@@ -1897,7 +1897,7 @@
 											"top": 339.5,
 											"width": 202,
 											"height": 13,
-											"text": "Write boarding_pass.BoardingPass to file"
+											"text": "Write boarding_pass.Main to file"
 										},
 										{
 											"_type": "LabelView",
@@ -2365,7 +2365,7 @@
 											"top": 443.5,
 											"width": 196,
 											"height": 13,
-											"text": "Print boarding_pass.BoardingPass"
+											"text": "Print boarding_pass.Main"
 										},
 										{
 											"_type": "LabelView",
@@ -2544,7 +2544,7 @@
 										"$ref": "AAAAAAGAjMwkrwYJRXw="
 									},
 									"edgePosition": 1,
-									"text": "+Print boarding_pass.BoardingPass"
+									"text": "+Print boarding_pass.Main"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -3070,7 +3070,7 @@
 							"top": 408,
 							"width": 100.93896484375,
 							"height": 38,
-							"text": "Obtain boarding_pass.BoardingPass"
+							"text": "Obtain boarding_pass.Main"
 						},
 						{
 							"_type": "UMLNoteLinkView",
@@ -3099,7 +3099,7 @@
 							"top": 384,
 							"width": 121,
 							"height": 38,
-							"text": "Print boarding_pass.BoardingPass"
+							"text": "Print boarding_pass.Main"
 						},
 						{
 							"_type": "UMLNoteLinkView",
@@ -4405,7 +4405,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGAjME4zt/ASSY="
 							},
-							"name": "Print boarding_pass.BoardingPass",
+							"name": "Print boarding_pass.Main",
 							"end1": {
 								"_type": "UMLAssociationEnd",
 								"_id": "AAAAAAGAjMwkrwYG998=",
@@ -4475,7 +4475,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGAjLzz3997bCY="
 					},
-					"name": "Issue boarding_pass.BoardingPass"
+					"name": "Issue boarding_pass.Main"
 				},
 				{
 					"_type": "UMLUseCase",
@@ -4483,7 +4483,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGAjLzz3997bCY="
 					},
-					"name": "Generate boarding_pass.BoardingPass"
+					"name": "Generate boarding_pass.Main"
 				},
 				{
 					"_type": "UMLUseCase",
@@ -4491,7 +4491,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGAjLzz3997bCY="
 					},
-					"name": "Write boarding_pass.BoardingPass to file"
+					"name": "Write boarding_pass.Main to file"
 				},
 				{
 					"_type": "UMLUseCase",
@@ -4499,7 +4499,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGAjLzz3997bCY="
 					},
-					"name": "Print boarding_pass.BoardingPass"
+					"name": "Print boarding_pass.Main"
 				},
 				{
 					"_type": "UMLUseCase",
