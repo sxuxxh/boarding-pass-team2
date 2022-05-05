@@ -55,7 +55,7 @@ public static String getDepartureDateTime(){
     departureTime = scanner.nextLine();
     return departureDateTime = departureDate+" "+departureTime;
     }
-public static void getTripCode(){
+public static String getTripCode(){
     System.out.println("Please enter the number for the trip you want to take. Trips are displayed origin-destinations. ");
     System.out.println(
             "   1. DCA_NYA\n" +
@@ -99,6 +99,7 @@ public static void getTripCode(){
         default:
             break;
     }
+    return trip;
 }
 public static void confirmPassengerInfo(){
     System.out.println("Please confirm the following info is correct: \n"+
