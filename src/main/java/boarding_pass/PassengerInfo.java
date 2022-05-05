@@ -16,7 +16,9 @@ public final class PassengerInfo {
     private static int age;
     private static String phoneNumber;
     private static String trip;
-    private static String departureDateTime;
+    private static String departureDateTime = " ";
+    private static String departureTime;
+    private static String departureDate;
 
 public static void intro(){
     System.out.println("Welcome to the Boarding Pass Ticket Station!\n" +
@@ -46,8 +48,12 @@ public static String getPhoneNumber(){
     return phoneNumber = scanner.next();
 }
 public static String getDepartureDateTime(){
-    System.out.println("Please enter the Date and Time you will be departing for your trip: ");
-    return departureDateTime = scanner.next();
+    System.out.println("Please enter the Date you will be departing for your trip: ");
+    departureDate = scanner.next();
+    scanner.nextLine();
+    System.out.println("Please enter the Time you will be departing for your trip: ");
+    departureTime = scanner.nextLine();
+    return departureDateTime = departureDate+" "+departureTime;
     }
 public static void getTripCode(){
     System.out.println("Please enter the number for the trip you want to take. Trips are displayed origin-destinations. ");
@@ -101,13 +107,13 @@ public static void confirmPassengerInfo(){
             "Email Address: "+email + "\n"+
             "Gender: "+gender+"\n"+
             "Phone Number: "+phoneNumber+"\n"+
-            "Depature Date/Time: "+ departureDateTime + "\n"+
+            "Departure Date/Time: "+ departureDateTime + "\n"+
             "Trip Code: "+ trip);
     System.out.println("Please enter 1 to confirm or 2 for incorrect data");
     int confirmInfo = scanner.nextInt();
     if (confirmInfo == 1){
         System.out.println("Entry confirmed");
-    }{
+    }else{
         System.out.println("Please try inputting your info again.");
         //ToDo Need to redo PassengerInfo entry if user chooses this.
         }
