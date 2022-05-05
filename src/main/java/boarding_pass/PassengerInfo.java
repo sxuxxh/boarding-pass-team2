@@ -8,17 +8,17 @@ package boarding_pass;
 import java.util.Scanner;
 
 public final class PassengerInfo {
-    private static Scanner scanner = new Scanner(System.in);
-    private static String firstName;
-    private static String lastName;
-    private static String email;
-    private static String gender;
-    private static int age;
-    private static String phoneNumber;
-    private static String trip;
-    private static String departureDateTime = " ";
-    private static String departureTime;
-    private static String departureDate;
+    public static Scanner scanner = new Scanner(System.in);
+    public static String firstName;
+    public static String lastName;
+    public static String email;
+    public static String gender;
+    public static int age;
+    public static String phoneNumber;
+    public static String trip;
+    public static String departureDateTime = " ";
+    public static String departureTime;
+    public static String departureDate;
 
 public static void intro(){
     System.out.println("Welcome to the Boarding Pass Ticket Station!\n" +

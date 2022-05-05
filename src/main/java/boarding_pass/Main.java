@@ -18,6 +18,8 @@ public class Main {
         PassengerInfo.getDepartureDateTime();
         PassengerInfo.getTripCode();
         PassengerInfo.confirmPassengerInfo();
+
+        CalculateTotalPrice.getTotalPrice();
     }
 
 }
