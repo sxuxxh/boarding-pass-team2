@@ -20,12 +20,23 @@ public class CalculateTotalPrice {
             afterDiscountCost = tripCost - discount;
         }
         if(PassengerInfo.age <= 12){
-            discount = tripCost * 0.5;
-            afterDiscountCost = tripCost - discount;
+            if (afterDiscountCost != 0){
+                discount = tripCost * 0.5;
+                afterDiscountCost = afterDiscountCost - discount;
+            } else {
+                discount = tripCost * 0.5;
+                afterDiscountCost = tripCost - discount;
+            }
+
         }
         if (PassengerInfo.age >= 60) {
-            discount = tripCost * 0.6;
-            afterDiscountCost = tripCost - discount;
+            if (afterDiscountCost != 0){
+                discount = tripCost * 0.6;
+                afterDiscountCost = afterDiscountCost - discount;
+            } else {
+                discount = tripCost * 0.6;
+                afterDiscountCost = tripCost - discount;
+            }
         }
      }
         System.out.println(afterDiscountCost);
