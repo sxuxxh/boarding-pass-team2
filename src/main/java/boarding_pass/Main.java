@@ -5,11 +5,18 @@
  */
 package boarding_pass;
 
+import java.util.HashMap;
+
 import static boarding_pass.PassengerInfo.*;
 
 public class Main {
+    public static PriceList priceList = new PriceList(new HashMap<TripCode, Double>());
+
+
     public static void main(String[] args) {
-        PassengerInfo.intro();
+        priceList.populatePriceLst();
+
+    /*    PassengerInfo.intro();
         PassengerInfo.getName();
         PassengerInfo.getAge();
         PassengerInfo.getEmail();
@@ -18,8 +25,9 @@ public class Main {
         PassengerInfo.getDepartureDateTime();
         PassengerInfo.getTripCode();
         PassengerInfo.confirmPassengerInfo();
-
-        CalculateTotalPrice.getTotalPrice();
+        PassengerInfo.continueOrQuit();
+*/
+        CalculateTotalPrice.getTotalPrice(PassengerInfo.getAge(), PassengerInfo.getGender(), TripCode.valueOf(PassengerInfo.getTripCode()));
     }
 
 }

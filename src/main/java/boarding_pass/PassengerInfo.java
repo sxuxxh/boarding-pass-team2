@@ -40,7 +40,7 @@ public static String getEmail(){
     return email = scanner.next();
 }
 public static String getGender(){
-    System.out.println("Please enter your gender: ");
+    System.out.println("Are you Male or Female?");
     return gender = scanner.next();
 }
 public static String getPhoneNumber(){
@@ -118,5 +118,10 @@ public static void confirmPassengerInfo(){
         System.out.println("Please try inputting your info again.");
         //ToDo Need to redo PassengerInfo entry if user chooses this.
         }
+    }
+public static boolean continueOrQuit() {
+    System.out.println("Do you want to purchase another ticket? (yes or no)");
+    String ans = scanner.next();
+    return !ans.equals("no");
     }
 }
