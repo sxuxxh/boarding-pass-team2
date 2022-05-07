@@ -1,8 +1,6 @@
 package boarding_pass;
 
 
-import java.util.HashMap;
-
 public class CalculateTotalPrice {
 
     public static void getTotalPrice(int age, String gender, TripCode tripCode){
@@ -11,9 +9,9 @@ public class CalculateTotalPrice {
         double discount = 0;
         double afterDiscountCost = 0;
 
-    for(TripCode key: Main.priceList.getPriceLst().keySet()) {
+    for(TripCode key: BoardingPass.priceList.getPriceLst().keySet()) {
         if (key.equals(tripCode)){
-            tripCost = Main.priceList.getPriceLst().get(key);
+            tripCost = BoardingPass.priceList.getPriceLst().get(key);
         }
         if (PassengerInfo.gender.equals("Female") || PassengerInfo.gender.equals("female")){
             discount = tripCost * 0.25;

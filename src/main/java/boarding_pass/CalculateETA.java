@@ -39,9 +39,9 @@ public class CalculateETA {
     // Get ETA based on tripcode
     public static float getETA(TripCode tripCode) {
         float eta=0;
-        for (TripCode key: Main.etaLst.getEtaLst().keySet()) {
+        for (TripCode key: BoardingPass.etaLst.getEtaLst().keySet()) {
             if (key.equals(tripCode)) {
-                eta=Main.etaLst.getEtaLst().get(key);
+                eta= BoardingPass.etaLst.getEtaLst().get(key);
             }
         }
         return eta;
