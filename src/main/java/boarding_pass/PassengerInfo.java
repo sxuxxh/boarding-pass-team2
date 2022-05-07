@@ -101,7 +101,7 @@ public static String getTripCode(){
     }
     return trip;
 }
-public static void confirmPassengerInfo(){
+public static boolean confirmPassengerInfo(){
     System.out.println("Please confirm the following info is correct: \n"+
             "Full Name: "+firstName + " "+ lastName+"\n"+
             "Age: "+age+"\n"+
@@ -113,10 +113,11 @@ public static void confirmPassengerInfo(){
     System.out.println("Please enter 1 to confirm or 2 for incorrect data");
     int confirmInfo = scanner.nextInt();
     if (confirmInfo == 1){
-        System.out.println("Entry confirmed");
+        System.out.println("Thank you! Entry confirmed.");
+        return true;
     }else{
         System.out.println("Please try inputting your info again.");
-        //ToDo Need to redo PassengerInfo entry if user chooses this.
+        return false;
         }
     }
 public static boolean continueOrQuit() {
