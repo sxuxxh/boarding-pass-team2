@@ -89,7 +89,7 @@ public class BoardingPassStore {
                                         "  Trip(Origin_Destination): %s                            \n" +
                                         "  Departure DateTime: %s                                  \n" +
                                         "  Estimated Arrival DateTime: %s                          \n" +
-                                        "  Total Price: $%s                                        \n" +
+                                        "  Total Price: %s                                         \n" +
                                         "**********************************************************\n";
         List<String> boardingPassPropLst = Arrays.asList(boardingPassStr.split(","));
         return String.format(boardingPassPresentStr,
