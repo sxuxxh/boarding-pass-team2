@@ -1,0 +1,11 @@
+**********************************************************
+***********    Boarding Pass Ticket Station    ***********
+  Boarding Pass No.: 5                                   
+  Passenger Name: Rhea Cliff                                      
+  Passenger Age: 62  	Gender: Female                         
+  Passenger Email: no  	Phone#: 55                       
+  Trip(Origin_Destination): DCA_LAA                            
+  Departure DateTime: 10-10-2023 10:00:00 AM                                  
+  Estimated Arrival DateTime: 10-10-2023 03:30:46 PM                          
+  Total Price: $97.50                                         
+**********************************************************
