@@ -1,6 +1,13 @@
 package boarding_pass;
 
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.text.FieldPosition;
+import java.text.NumberFormat;
+import java.text.ParsePosition;
+import java.util.Locale;
+
 public class CalculateTotalPrice {
 
     public static double getTotalPrice(int age, String gender, TripCode tripCode){
@@ -36,7 +43,11 @@ public class CalculateTotalPrice {
                 afterDiscountCost = tripCost - discount;
             }
         }
+        if(PassengerInfo.gender.equals("Male") || PassengerInfo.gender.equals("male") && PassengerInfo.age > 12 && PassengerInfo.age < 60){
+            afterDiscountCost = tripCost;
+        }
      }
+
      return afterDiscountCost;
     }
 }

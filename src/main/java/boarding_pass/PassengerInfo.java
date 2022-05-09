@@ -48,10 +48,10 @@ public static String getPhoneNumber(){
     return phoneNumber = scanner.next();
 }
 public static String getDepartureDateTime(){
-    System.out.println("Please enter the Date you will be departing for your trip: ");
+    System.out.println("Please enter the Date you will be departing for your trip (enter in 'mm-dd-yy' format): ");
     departureDate = scanner.next();
     scanner.nextLine();
-    System.out.println("Please enter the Time you will be departing for your trip: ");
+    System.out.println("Please enter the Time you will be departing for your trip (enter in 'hh:mm:ss AM/PM' format): ");
     departureTime = scanner.nextLine();
     return departureDateTime = departureDate+" "+departureTime;
     }

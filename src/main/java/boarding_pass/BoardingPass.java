@@ -7,6 +7,7 @@ package boarding_pass;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.NumberFormat;
 import java.util.HashMap;
 
 
@@ -70,6 +71,6 @@ public class BoardingPass {
         // Generate ETA
         boardingPass = boardingPass + CalculateETA.calculateETA(departureDateTime,tripCode) + ",";
         // Generate total price
-        boardingPass = boardingPass + String.valueOf(CalculateTotalPrice.getTotalPrice(age,gender,tripCode));
+        boardingPass = boardingPass + String.valueOf(NumberFormat.getCurrencyInstance().format(CalculateTotalPrice.getTotalPrice(age, gender, tripCode)));
     }
 }
