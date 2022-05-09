@@ -1,6 +1,7 @@
 **********************************************************
 ***********    Boarding Pass Ticket Station    ***********
   Boarding Pass No.: 6                                   
+<<<<<<< Updated upstream
   Passenger Name: Lisa Lee                                      
   Passenger Age: 28  	Gender: Female                         
   Passenger Email: fdfdd@yahoo.com  	Phone#: 4172345423                       
@@ -8,4 +9,13 @@
   Departure DateTime: 06-12-2022 9:30:00 AM                                  
   Estimated Arrival DateTime: 06-12-2022 12:01:22 PM                          
   Total Price: $262.5                                        
+=======
+  Passenger Name: Pat Cliff                                      
+  Passenger Age: 11  	Gender: Female                         
+  Passenger Email: no  	Phone#: 555                       
+  Trip(Origin_Destination): DCA_LAA                            
+  Departure DateTime: 10-10-23 10:10:10 AM                                  
+  Estimated Arrival DateTime: 10-10-0023 03:56:48 PM                          
+  Total Price: $230.50                                        
+>>>>>>> Stashed changes
 **********************************************************
