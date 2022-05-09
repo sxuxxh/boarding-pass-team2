@@ -123,104 +123,36 @@
 									"subViews": [
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGAi5F1F39XX74=",
+											"_id": "AAAAAAGAqUT3yrCS2AU=",
 											"_parent": {
 												"$ref": "AAAAAAGAi4/ZSX8ykXg="
 											},
 											"model": {
-												"$ref": "AAAAAAGAi5F1Bn9UZxI="
+												"$ref": "AAAAAAGAqUT3urCPZdc="
 											},
 											"font": "Arial;13;0",
 											"left": 397,
 											"top": 158,
 											"width": 183.49169921875,
 											"height": 13,
-											"text": "+passenger: PassengerInfo",
+											"text": "+priceList: PriceList",
 											"horizontalAlignment": 0
 										},
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGAi5F+639dYe0=",
+											"_id": "AAAAAAGAqUXSMLE+MCo=",
 											"_parent": {
 												"$ref": "AAAAAAGAi4/ZSX8ykXg="
 											},
 											"model": {
-												"$ref": "AAAAAAGAi5F+5n9a5vw="
+												"$ref": "AAAAAAGAqUXSKLE77lA="
 											},
 											"font": "Arial;13;0",
 											"left": 397,
 											"top": 173,
 											"width": 183.49169921875,
 											"height": 13,
-											"text": "+ETA: String",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGAi5GKnX9j/WI=",
-											"_parent": {
-												"$ref": "AAAAAAGAi4/ZSX8ykXg="
-											},
-											"model": {
-												"$ref": "AAAAAAGAi5GKj39ggzg="
-											},
-											"font": "Arial;13;0",
-											"left": 397,
-											"top": 188,
-											"width": 183.49169921875,
-											"height": 13,
-											"text": "+totalTicketPrice: double",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGAi5zL1IhvoOU=",
-											"_parent": {
-												"$ref": "AAAAAAGAi4/ZSX8ykXg="
-											},
-											"model": {
-												"$ref": "AAAAAAGAi5zLyohsEnM="
-											},
-											"font": "Arial;13;0",
-											"left": 397,
-											"top": 203,
-											"width": 183.49169921875,
-											"height": 13,
-											"text": "+boardingPassNumber: int",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGAi6AQp4o2Ntk=",
-											"_parent": {
-												"$ref": "AAAAAAGAi4/ZSX8ykXg="
-											},
-											"model": {
-												"$ref": "AAAAAAGAi6AQnIozHXA="
-											},
-											"font": "Arial;13;0",
-											"left": 397,
-											"top": 218,
-											"width": 183.49169921875,
-											"height": 13,
-											"text": "+tripCode: String",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGAi6DZo4r1jYY=",
-											"_parent": {
-												"$ref": "AAAAAAGAi4/ZSX8ykXg="
-											},
-											"model": {
-												"$ref": "AAAAAAGAi6DZm4ry+eA="
-											},
-											"font": "Arial;13;0",
-											"left": 397,
-											"top": 233,
-											"width": 183.49169921875,
-											"height": 13,
-											"text": "+departureDateTime: String",
+											"text": "+etaList: ETAList",
 											"horizontalAlignment": 0
 										}
 									],
@@ -228,7 +160,7 @@
 									"left": 392,
 									"top": 153,
 									"width": 193.49169921875,
-									"height": 98
+									"height": 38
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -269,10 +201,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 397,
-											"top": 258,
+											"top": 198,
 											"width": 183.49169921875,
 											"height": 13,
-											"text": "+generateBoardingPassNum()",
+											"text": "+populatePriceLst()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -286,18 +218,86 @@
 											},
 											"font": "Arial;13;0",
 											"left": 397,
+											"top": 213,
+											"width": 183.49169921875,
+											"height": 13,
+											"text": "+populateETALst()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGAqUaetbLb97o=",
+											"_parent": {
+												"$ref": "AAAAAAGAi4/ZSX8z82Q="
+											},
+											"model": {
+												"$ref": "AAAAAAGAqUaer7LYvQQ="
+											},
+											"font": "Arial;13;0",
+											"left": 397,
+											"top": 228,
+											"width": 183.49169921875,
+											"height": 13,
+											"text": "+loopInputs()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGAqUjp37Ycuqc=",
+											"_parent": {
+												"$ref": "AAAAAAGAi4/ZSX8z82Q="
+											},
+											"model": {
+												"$ref": "AAAAAAGAqUjp27YZqDM="
+											},
+											"font": "Arial;13;0",
+											"left": 397,
+											"top": 243,
+											"width": 183.49169921875,
+											"height": 13,
+											"text": "+createFile()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGAqUkQrLbIWOs=",
+											"_parent": {
+												"$ref": "AAAAAAGAi4/ZSX8z82Q="
+											},
+											"model": {
+												"$ref": "AAAAAAGAqUkQp7bFGcs="
+											},
+											"font": "Arial;13;0",
+											"left": 397,
+											"top": 258,
+											"width": 183.49169921875,
+											"height": 13,
+											"text": "+writeABoardingPass()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGAqUlIYrd0ZO4=",
+											"_parent": {
+												"$ref": "AAAAAAGAi4/ZSX8z82Q="
+											},
+											"model": {
+												"$ref": "AAAAAAGAqUlIWbdxE5c="
+											},
+											"font": "Arial;13;0",
+											"left": 397,
 											"top": 273,
 											"width": 183.49169921875,
 											"height": 13,
-											"text": "+generateETA()",
+											"text": "+presentBoardingPass()",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 392,
-									"top": 251,
+									"top": 191,
 									"width": 193.49169921875,
-									"height": 40
+									"height": 100
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -2792,7 +2792,7 @@
 							"top": 128,
 							"width": 50.341796875,
 							"height": 38,
-							"text": "static final"
+							"text": "Main"
 						},
 						{
 							"_type": "UMLNoteLinkView",
@@ -2817,7 +2817,7 @@
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"font": "Arial;13;0",
-							"left": 952,
+							"left": 936,
 							"top": 128,
 							"width": 50.341796875,
 							"height": 38,
@@ -2837,7 +2837,7 @@
 								"$ref": "AAAAAAGAi5JvWH9pWOg="
 							},
 							"lineStyle": 1,
-							"points": "920:172;951:158"
+							"points": "920:167;935:159"
 						},
 						{
 							"_type": "UMLNoteView",
@@ -3801,59 +3801,25 @@
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAGAi5F1Bn9UZxI=",
+							"_id": "AAAAAAGAqUT3urCPZdc=",
 							"_parent": {
 								"$ref": "AAAAAAGAi4/ZR38qYCQ="
 							},
-							"name": "passenger",
+							"name": "priceList",
 							"type": {
-								"$ref": "AAAAAAGAi5JvWH9nA70="
+								"$ref": "AAAAAAGAi6iMH6mNMoU="
 							}
 						},
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAGAi5F+5n9a5vw=",
+							"_id": "AAAAAAGAqUXSKLE77lA=",
 							"_parent": {
 								"$ref": "AAAAAAGAi4/ZR38qYCQ="
 							},
-							"name": "ETA",
-							"type": "String"
-						},
-						{
-							"_type": "UMLAttribute",
-							"_id": "AAAAAAGAi5GKj39ggzg=",
-							"_parent": {
-								"$ref": "AAAAAAGAi4/ZR38qYCQ="
-							},
-							"name": "totalTicketPrice",
-							"type": "double"
-						},
-						{
-							"_type": "UMLAttribute",
-							"_id": "AAAAAAGAi5zLyohsEnM=",
-							"_parent": {
-								"$ref": "AAAAAAGAi4/ZR38qYCQ="
-							},
-							"name": "boardingPassNumber",
-							"type": "int"
-						},
-						{
-							"_type": "UMLAttribute",
-							"_id": "AAAAAAGAi6AQnIozHXA=",
-							"_parent": {
-								"$ref": "AAAAAAGAi4/ZR38qYCQ="
-							},
-							"name": "tripCode",
-							"type": "String"
-						},
-						{
-							"_type": "UMLAttribute",
-							"_id": "AAAAAAGAi6DZm4ry+eA=",
-							"_parent": {
-								"$ref": "AAAAAAGAi4/ZR38qYCQ="
-							},
-							"name": "departureDateTime",
-							"type": "String"
+							"name": "etaList",
+							"type": {
+								"$ref": "AAAAAAGAkDbJqFaaMgM="
+							}
 						}
 					],
 					"operations": [
@@ -3871,7 +3837,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGAi4/ZR38qYCQ="
 							},
-							"name": "generateBoardingPassNum"
+							"name": "populatePriceLst"
 						},
 						{
 							"_type": "UMLOperation",
@@ -3879,7 +3845,39 @@
 							"_parent": {
 								"$ref": "AAAAAAGAi4/ZR38qYCQ="
 							},
-							"name": "generateETA"
+							"name": "populateETALst"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGAqUaer7LYvQQ=",
+							"_parent": {
+								"$ref": "AAAAAAGAi4/ZR38qYCQ="
+							},
+							"name": "loopInputs"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGAqUjp27YZqDM=",
+							"_parent": {
+								"$ref": "AAAAAAGAi4/ZR38qYCQ="
+							},
+							"name": "createFile"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGAqUkQp7bFGcs=",
+							"_parent": {
+								"$ref": "AAAAAAGAi4/ZR38qYCQ="
+							},
+							"name": "writeABoardingPass"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGAqUlIWbdxE5c=",
+							"_parent": {
+								"$ref": "AAAAAAGAi4/ZR38qYCQ="
+							},
+							"name": "presentBoardingPass"
 						}
 					]
 				},

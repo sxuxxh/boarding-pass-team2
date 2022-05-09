@@ -70,7 +70,6 @@ public class BoardingPass {
         // Generate ETA
         boardingPass = boardingPass + CalculateETA.calculateETA(departureDateTime,tripCode) + ",";
         // Generate total price
-        boardingPass = boardingPass + "230.50"; // hard coding for now until fixing method
-        //boardingPass = boardingPass + String.valueOf(CalculateTotalPrice.getTotalPrice(age,gender,tripCode));
+        boardingPass = boardingPass + String.valueOf(CalculateTotalPrice.getTotalPrice(age,gender,tripCode));
     }
 }
