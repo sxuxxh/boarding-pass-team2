@@ -3,7 +3,7 @@ package boarding_pass;
 
 public class CalculateTotalPrice {
 
-    public static void getTotalPrice(int age, String gender, TripCode tripCode){
+    public static double getTotalPrice(int age, String gender, TripCode tripCode){
     //Need to get tripcode value from PriceList and set as trip cost.
         double tripCost = 0;
         double discount = 0;
@@ -37,6 +37,6 @@ public class CalculateTotalPrice {
             }
         }
      }
-        System.out.println(afterDiscountCost);
+     return afterDiscountCost;
     }
 }
